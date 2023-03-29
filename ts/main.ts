@@ -22,8 +22,8 @@ const postsData = [
 
 const postCard = ({ body, id, imageUrl, title }) => `
   <div class='post'>
-    <button type='button' class='post-btn' id='${id}'>
-      <img src='${imageUrl}' alt='${title}' />
+    <button type='button' class='post-btn' id='${id}' onclick="window.open('./commits.html', '_blank')" >
+      <img src='${imageUrl}' id='${id}' alt='${title}' width="500" height="400" align:"middle" />
       <div>
         <h1>${title}</h1>
         <p>${body}</p>
@@ -44,10 +44,5 @@ if (postsList) {
 
   postsList.innerHTML = postsDataToHTML
 
-  const postButtons = document.querySelectorAll('.post-btn');
-  postButtons.forEach((button) => {
-    button.addEventListener('click', function () {
-      console.log(+this.id);
-    });
-  });
+
 }
