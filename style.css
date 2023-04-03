@@ -10,3 +10,24 @@ html {
   position: relative;
   left: 400px;
 }
+
+.commit-img{
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  left: 400px;
+}
+
+.comment{
+  position: relative;
+  left: 400px;
+  color: black;
+  background-color: aliceblue;
+  width: 500px;
+}
+
+.body-comment{
+  color: #222;
+  background-color: rgb(121, 113, 113);
+  height: 40px;
+}

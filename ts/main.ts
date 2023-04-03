@@ -20,9 +20,10 @@ const postsData = [
   }
 ]
 
-const postCard = ({ body, id, imageUrl, title }) => `
+const postCard = ({ body, id, imageUrl, title }: Posts): any => `
   <div class='post'>
-    <button type='button' class='post-btn' id='${id}' onclick="window.open('./commits.html', '_blank')" >
+    <button type='button' class='post-btn' id='${id}' 
+      onclick="window.open('./commits.html?id=${id}', '_blank')" >
       <img src='${imageUrl}' id='${id}' alt='${title}' width="500" height="400" align:"middle" />
       <div>
         <h1>${title}</h1>
@@ -39,7 +40,7 @@ if (postsList) {
   let postsDataToHTML = ''
 
   for (const postData of postsData) {  
-    postsDataToHTML += postCard(postData)
+    postsDataToHTML += postCard(postData as Posts)
   }
 
   postsList.innerHTML = postsDataToHTML
