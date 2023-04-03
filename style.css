@@ -2,6 +2,18 @@ html {
   background-color: #222;
 }
 
+.blog{
+  background-color: white;
+  padding: 15px;
+  font-size: 25px;
+  font-family: sans-serif;
+  background-position: 0px;
+}
+
+.img-btn{
+  border-radius: 15px;
+}
+
 .post-btn{
   padding: 7px;
   border: none;
@@ -16,6 +28,8 @@ html {
   cursor: pointer;
   position: relative;
   left: 400px;
+  background-color: white;
+  padding: 7px;
 }
 
 .comment{
