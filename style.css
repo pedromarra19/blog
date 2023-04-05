@@ -8,6 +8,8 @@ html {
   font-size: 25px;
   font-family: sans-serif;
   background-position: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
 }
 
 .img-btn{
@@ -21,6 +23,7 @@ html {
   cursor: pointer;
   position: relative;
   left: 400px;
+  margin-top: 20px;
 }
 
 .commit-img{
